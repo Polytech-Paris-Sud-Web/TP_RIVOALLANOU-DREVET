@@ -1,0 +1,7 @@
+<div *ngIf="this.article != null">
+    <h3><a [routerLink]="['/article/', this.article.id]"> {{this.article.title}} </a></h3>
+    <p> {{this.article.content}} <br/>
+    	<i>{{this.article.authors}}</i>
+    </p>
+    <button class="warning" (click)="delete()">DELETE</button>
+</div>
